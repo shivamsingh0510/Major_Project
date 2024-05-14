@@ -5,8 +5,8 @@ import streamlit as st
 import pandas as pd
 
 # Set Tesseract command to default path in Google Colab
-# pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
-pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract'
+pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+#pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract'
 
 def process_frame(image):
     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
